@@ -1,6 +1,10 @@
 {
-    "extends": "airbnb-base",
-    "rules": {
-        "func-names": ["error", "never"]
-    }
+  "extends": "airbnb-base",
+  "rules": {
+    "func-names": [
+      "error",
+      "never"
+    ],
+    "allowForLoopAfterthoughts": true
+  }
 }
