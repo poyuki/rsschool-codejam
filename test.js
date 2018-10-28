@@ -1,8 +1,8 @@
 const assert = require('assert');
+const sumOfOther = require('./src/sumOfOther.js');
+const make = require('./src/make.js');
 
 Object.freeze(assert);
-const sumOfOther = require('./src/sumOfOther.js');
-
 describe('tests for sumOfOther(array)', () => {
   it('at [2, 3, 4, 1], should return [8, 7, 6, 9]', () => {
     assert.deepEqual(sumOfOther([2, 3, 4, 1]), [8, 7, 6, 9]);
@@ -24,5 +24,10 @@ describe('tests for sumOfOther(array)', () => {
 });
 
 describe('tests for make()', () => {
-
+  function sum(a, b) {
+    return a + b;
+  }
+  it('at make(15)(34, 21, 666)(41)(sum), should retrun 77', () => {
+    assert.equal(make(15)(34, 21, 666)(41)(sum), 77);
+  });
 });
