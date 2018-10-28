@@ -7,10 +7,12 @@
   "devDependencies": {
     "eslint": "^5.8.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0"
   },
   "license": "MIT",
   "scripts": {
-    "lint":"eslint src"
+    "test": "mocha test.js",
+    "lint": "eslint src"
   }
 }
