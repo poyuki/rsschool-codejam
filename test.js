@@ -12,7 +12,13 @@ describe('test for sumOfOther(array)', () => {
     assert.deepEqual(sumOfOther([5, 14, 12, 3]), [29, 20, 22, 31]);
   });
 
-  it('at [5, 14, 12, 3], should return [29, 20, 22, 31]', () => {
-    assert.deepEqual(sumOfOther([5, 14, 12, 3]), [29, 20, 22, 31]);
+  it('at [7, 1, 2, 15, 6, 99, 75, 5], should return [203, 209, 208, 195, 204, 111, 135, 210]', () => {
+    assert.deepEqual(sumOfOther([7, 1, 2, 15, 6, 99, 75, 5]),
+      [203, 209, 208, 195, 204, 111, 135, 205]);
+  });
+
+  it('at [], should return []', () => {
+    assert.deepEqual(sumOfOther([]),
+      []);
   });
 });
